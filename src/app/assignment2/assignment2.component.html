@@ -1,0 +1,5 @@
+<p>assignment2 works!</p>
+<label>Username :</label>
+<input [(ngModel)]="userName">
+<p>{{ userName }}</p>
+<button class="btn btn-primary" (click)="userName = ''"  [disabled]="userName === ''">Clear</button>
