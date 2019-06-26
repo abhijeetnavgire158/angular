@@ -1,1 +1,9 @@
 <p>This is Server component</p>
+Server with Id {{ serverId }} is {{ getServerStatus() }}
+
+<input (input)="onUpdateServerName($event)"/> <br />
+<input [(ngModel)]="serverName"> <br />
+Server Name : {{ serverName }} <br />
+<button class="btn btn-primary" (click)="onCreateServer()" [disabled]="!allowedNewServer">New Server</button>
+<p>{{ newServerMessage }}</p>
+<p [innerText]="allowedNewServer"></p>
