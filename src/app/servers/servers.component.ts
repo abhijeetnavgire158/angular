@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <p>servers works!</p>
   <app-server></app-server>
-  <app-server></app-server>  
   `,
   styleUrls: ['./servers.component.css']
 })
