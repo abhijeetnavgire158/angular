@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  servers = [
+    {name: 'test1', content: 'content'}
+  ];
+
+  value = 500;
+  onCreateServer(serverData: {serverName, serverContent}) {
+    console.log('SERVER DATA');
+    this.servers.push({name: serverData.serverName, content: serverData.serverContent});
+}
+
 }

@@ -1,14 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { from } from 'rxjs';
+import { Assignment2Component } from './assignment2/assignment2.component';
+import { Assignment3Component } from './assignment3/assignment3.component';
+import { ServerListComponent } from './server-list/server-list.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { WarningHighlightDirective } from './basic-highlight/warning-highlight.directive';
+import { BetterHighlightDirective } from './basic-highlight/better-highlight.directive';
+import { HostbindingDirective } from './basic-highlight/hostbinding.directive';
+import { HostbindingwithpropertyDirective } from './basic-highlight/hostbindingwithproperty.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent,
+    ServersComponent,
+    WarningAlertComponent,
+    SuccessAlertComponent,
+    Assignment2Component,
+    Assignment3Component,
+    ServerListComponent,
+    BasicHighlightDirective,
+    WarningHighlightDirective,
+    BetterHighlightDirective,
+    HostbindingDirective,
+    HostbindingwithpropertyDirective,
+    UnlessDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

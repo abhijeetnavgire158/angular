@@ -1,0 +1,49 @@
+<h2>i'm in App component</h2>
+<!-- <app-servers (serverCreated)="onCreateServer($event)"></app-servers> -->
+
+<app-server (serverCreated)="onCreateServer($event)"></app-server>
+
+
+<h3>Servers list</h3>
+    <app-server-list 
+    *ngFor="let server of servers"
+    [serverEntry]="server">
+
+
+<li> {{ server.name }} -- {{ server.content }}</li>
+</app-server-list>
+<!-- <div app-servers></div> -->
+<!-- <div class="app-servers"></div> -->
+<app-warning-alert></app-warning-alert>
+<br>
+<hr>
+<br>
+Assignment 2
+<app-assignment2></app-assignment2>
+<br>
+Assignment 3
+<app-assignment3></app-assignment3>
+
+<p appBasicHighlight> Style me with basic highlight</p>
+<p appWarning> Style me with basic highlight</p>
+<p appBetterHighlight> Dynamic with event handle </p>
+<p appHostbinding> Dynamic with appHostbinding .it's lot easy</p>
+
+<p appHostbindingwithproperty [defaultColor]="'orange'" [highlightColor]="'red'"> Host binding with parameters</p>
+
+<br>
+<div *appUnless="false">
+    <p> YEEEE If false</p>
+</div>
+
+<div [ngSwitch]="value">
+<p *ngSwitchCase="10">
+    10
+</p>
+<p *ngSwitchCase="50">
+    50
+</p>
+<p *ngSwitchDefault>
+    Default
+</p>
+</div>

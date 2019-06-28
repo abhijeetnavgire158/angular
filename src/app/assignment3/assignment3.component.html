@@ -1,0 +1,11 @@
+<p>assignment3 works!</p>
+<button class="btn btn-primary" (click)="onToggleDetails()">Details</button>
+<div *ngIf="displaySecret" >
+    <p>Secret Password = abhi</p>
+    <div *ngFor="let log of logCounts">
+        <div 
+        [ngStyle]="{'background-color': (log >= 5) ? 'blue' : 'transparent'}"
+        [ngClass]="{'bg-white': (log >= 5)}"        
+        >{{ log }}</div>
+    </div>
+</div>
