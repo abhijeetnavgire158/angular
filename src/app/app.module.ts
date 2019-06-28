@@ -11,6 +11,12 @@ import { from } from 'rxjs';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment3Component } from './assignment3/assignment3.component';
 import { ServerListComponent } from './server-list/server-list.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { WarningHighlightDirective } from './basic-highlight/warning-highlight.directive';
+import { BetterHighlightDirective } from './basic-highlight/better-highlight.directive';
+import { HostbindingDirective } from './basic-highlight/hostbinding.directive';
+import { HostbindingwithpropertyDirective } from './basic-highlight/hostbindingwithproperty.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { ServerListComponent } from './server-list/server-list.component';
     SuccessAlertComponent,
     Assignment2Component,
     Assignment3Component,
-    ServerListComponent
+    ServerListComponent,
+    BasicHighlightDirective,
+    WarningHighlightDirective,
+    BetterHighlightDirective,
+    HostbindingDirective,
+    HostbindingwithpropertyDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

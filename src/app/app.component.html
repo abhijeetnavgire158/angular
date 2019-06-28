@@ -23,3 +23,27 @@ Assignment 2
 <br>
 Assignment 3
 <app-assignment3></app-assignment3>
+
+<p appBasicHighlight> Style me with basic highlight</p>
+<p appWarning> Style me with basic highlight</p>
+<p appBetterHighlight> Dynamic with event handle </p>
+<p appHostbinding> Dynamic with appHostbinding .it's lot easy</p>
+
+<p appHostbindingwithproperty [defaultColor]="'orange'" [highlightColor]="'red'"> Host binding with parameters</p>
+
+<br>
+<div *appUnless="false">
+    <p> YEEEE If false</p>
+</div>
+
+<div [ngSwitch]="value">
+<p *ngSwitchCase="10">
+    10
+</p>
+<p *ngSwitchCase="50">
+    50
+</p>
+<p *ngSwitchDefault>
+    Default
+</p>
+</div>

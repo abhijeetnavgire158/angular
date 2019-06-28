@@ -10,6 +10,7 @@ export class AppComponent {
     {name: 'test1', content: 'content'}
   ];
 
+  value = 500;
   onCreateServer(serverData: {serverName, serverContent}) {
     console.log('SERVER DATA');
     this.servers.push({name: serverData.serverName, content: serverData.serverContent});
